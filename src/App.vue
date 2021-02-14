@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+      <input type="text" :class="txt==='请输入'?'ac':''" v-model="txt" @focus="show" @blur="cshow">
       <router-link to="/">Homessssssssssssssssssssssss</router-link> |
       <router-link to="/about">About水水ddddddddddddddddd+分支dddd</router-link>
     </div>
@@ -9,6 +10,10 @@
 </template>
 
 <style lang="less">
+.ac{
+  color:gray;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,3 +35,28 @@
   }
 }
 </style>
+<script>
+export default {
+  data () {
+    return {
+      txt:"请输入"
+    }
+  },
+  methods: {
+    show(){
+      if(this.txt==="请输入")
+         this.txt=""
+
+    },
+    cshow(){
+      if(this.txt===''){
+        this.txt='请输入'
+      }
+    }
+  }
+
+
+
+
+}
+</script>
