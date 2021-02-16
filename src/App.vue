@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <div class="d1">1</div>
-      <div class="d2">2</div>
+      <div class="d2">2ssss</div>
     </div>
   </div>
 </template>
