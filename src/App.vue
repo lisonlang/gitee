@@ -1,9 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <input type="text" :class="txt==='请输入'?'ac':''" v-model="txt" @focus="show" @blur="cshow">
-      <router-link to="/">Homessssssssssssssssssssssss</router-link> |
-      <router-link to="/about">About水水ddddddddddddddddd+分支dddd</router-link>
+    
+      sssssssssssssssssssssssgit chssssssssssssssssssssssssssssssssssssss
     </div>
     <router-view/>
   </div>
