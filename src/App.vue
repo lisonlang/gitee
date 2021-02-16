@@ -1,61 +1,51 @@
 <template>
   <div id="app">
     <div id="nav">
-    
-     git 
+      <div class="d1">1</div>
+      <div class="d2">2</div>
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="less">
-.ac{
-  color:gray;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<style lang="less" scoped>
+.d1 {
+    flex: auto;
+    background: red;
   }
+  .d2 {
+    flex: auto;
+    background: pink;
+  }
+
+@media screen and (max-width: 800px) {
+  #nav {
+    display: block;
+  }
+ 
+}
+@media screen and (min-width: 801px) {
+  #nav {
+    display: flex;
+  }
+  
 }
 </style>
 <script>
 export default {
-  data () {
+  data() {
     return {
-      txt:"请输入"
-    }
+      txt: "请输入",
+    };
   },
   methods: {
-    show(){
-      if(this.txt==="请输入")
-         this.txt=""
-
+    show() {
+      if (this.txt === "请输入") this.txt = "";
     },
-    cshow(){
-      if(this.txt===''){
-        this.txt='请输入'
+    cshow() {
+      if (this.txt === "") {
+        this.txt = "请输入";
       }
-    }
-  }
-
-
-
-
-}
+    },
+  },
+};
 </script>
