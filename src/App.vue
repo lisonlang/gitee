@@ -1,33 +1,39 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <div class="d1">1</div>
-      <div class="d2">2ssss</div>
+    <div class="container">
+      <div>导航</div>
+      <div>导航</div>
+      <div>导航</div>
+      <div>导航</div>
+      <div>导航</div>
+      <div>导航</div>
+      <div>导航</div>
+      <div>导航</div>
     </div>
   </div>
 </template>
 
 <style lang="less" scoped>
-.d1 {
+.container {
+  width: 750px;
+  display: flex;
+  background: green;
+  margin: 0px auto;
+  div {
+    text-align: center;
     flex: auto;
-    background: red;
   }
-  .d2 {
-    flex: auto;
-    background: pink;
-  }
-
-@media screen and (max-width: 800px) {
-  #nav {
-    display: block;
-  }
- 
 }
-@media screen and (min-width: 801px) {
-  #nav {
-    display: flex;
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  display: inline-block;
+
+    div {
+      display: inline-block;
+      width: 33.3%;
+    }
   }
-  
 }
 </style>
 <script>
