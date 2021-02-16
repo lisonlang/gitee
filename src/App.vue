@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
     
-      sssssssssssssssssssssssgit chssssssssssssssssssssssssssssssssssssss"dsdsd大幅度反对法
+     git 
     </div>
     <router-view/>
   </div>
